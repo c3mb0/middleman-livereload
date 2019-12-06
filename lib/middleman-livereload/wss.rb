@@ -23,7 +23,7 @@ module Middleman
       end
 
       def scheme
-        "wss"
+        valid? ? "wss" : "ws"
       end
 
       private
